@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NguyenLinhMVC.props" />
+</Project>
