@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NguyenLinhMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5177a8925816e910e7b9b74885ca3b092c3add9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+851ee28308615c87e7bcfddd03108a576bf044c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("NguyenLinhMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NguyenLinhMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
