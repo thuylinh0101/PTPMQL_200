@@ -2,19 +2,25 @@
 <html lang="en">
   <head>
     <style>
-    a[target] {
-      background-color: yellow;
+    body {
+      counter-reset: section;
+    }
+    
+    h2::before {
+      counter-increment: section;
+      content: "Section " counter(section) ": ";
     }
     </style>
     </head>
     <body>
     
-    <h2>CSS [attribute] Selector: Nguyễn Thuỳ Linh-2121051186</h2>
-    <p>The links with a target attribute gets a yellow background: Nguyễn Thuỳ Linh-2121051186</p>
+    <h1>Using CSS Counters: Nguyễn Thuỳ Linh-2121051186</h1>
     
-    <a href="https://www.w3schools.com">w3schools.com</a>
-    <a href="http://www.disney.com" target="_blank">disney.com</a>
-    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    <h2>HTML Tutorial: Nguyễn Thuỳ Linh-2121051186</h2>
+    <h2>CSS Tutorial: Nguyễn Thuỳ Linh-2121051186</h2>
+    <h2>JavaScript Tutorial: Nguyễn Thuỳ Linh-2121051186</h2>
+    <h2>Python Tutorial: Nguyễn Thuỳ Linh-2121051186</h2>
+    <h2>SQL Tutorial: Nguyễn Thuỳ Linh-2121051186</h2>
     
     </body>
 </html>
