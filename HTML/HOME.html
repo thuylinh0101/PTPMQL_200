@@ -4,16 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-      <h1>The input value attribute: Nguyễn Thuỳ Linh-2121051186</h1>
+      <h1>The input form attribute: Nguyễn Thuỳ Linh-2121051186</h1>
 
-      <p>The value attribute specifies an initial value for an input field: Nguyễn Thuỳ Linh-2121051186</p>
+      <p>The form attribute specifies the form an input element belongs to: Nguyễn Thuỳ Linh-2121051186</p>
       
-      <form action="/action_page.php">
-        <label for="fname">First name: Nguyễn Thuỳ Linh-2121051186</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name: Nguyễn Thuỳ Linh-2121051186</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <form action="/action_page.php" id="form1">
+        <label for="fname">First name: Nguyễn Thuỳ Linh-2121051186</label>
+        <input type="text" id="fname" name="fname"><br><br>
         <input type="submit" value="Submit">
       </form>
+      
+      <p>The "Last name" field below is outside the form element, but still part of the form: Nguyễn Thuỳ Linh-2121051186</p>
+      
+      <label for="lname">Last name: Nguyễn Thuỳ Linh-2121051186</label>
+      <input type="text" id="lname" name="lname" form="form1">
+      
     </body>
 </html>
