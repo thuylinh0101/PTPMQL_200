@@ -1,1 +1,7 @@
-<h1>Hello</h1>
+<h1>Dữ liệu sinh viên</h1>
+<form asp-action="Index">
+    <input type="text" name="StudentID" placeholder="Nhập mã sinh viên">
+    <input type="text" name="Fullname" placeholder="Nhập tên">
+    <input type="submit" value="Send Data"
+</form>
+<h1 class="text-center text-info">Dữ liệu sinh viên: @ViewBag.message</h1>

@@ -1,19 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Text.Encodings.Web;
-namespace MvcMovie.Controllers
-{
-    public class HelloWorldController : Controller
-    { 
-        // GET: /HelloWorld/
-        public string Index()
-        {
-            return "This is my default action...";
-        } 
-        // GET: /HelloWorld/Welcome/ 
+using MvcMovie.Models.Entities;
 
-        public string Welcome()
+namespace MvcMovie.Controllers;
+    public class HelloWorldController: Controller
+    {
+        public IActionResult Index()
         {
-            return "This is the Welcome action method...";
+            return View();
+        }
+        [HttpPost]
+         public IActionResult Index(HelloWorld hello) 
+        {
+            ViewBag.message = hello.StudentID + "-" + hello.FullName ;
+            return View();
+        }
+        public IActionResult Demo()
+        {
+                return View();
         }
     }
-}
+
