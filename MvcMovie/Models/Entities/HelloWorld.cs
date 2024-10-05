@@ -4,7 +4,7 @@ namespace MvcMovie.Models.Entities
 {
     public class HelloWorld
     {
-        public string StudentID {get; set;}
-        public string FullName {get; set;}
+        public required string StudentID {get; set;}
+        public required string FullName {get; set;}
     }
 }
