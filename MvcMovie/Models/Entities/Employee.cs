@@ -1,13 +1,9 @@
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-namespace MvcMovie.Models.Entities
+namespace MvcMovie.Models
 {
-    public class Employee {
-        [Key]
-        public required string EmployeeID { get; set; }
-        public string FullName { get; set; }
-        public string Address { get; set; }
-
+    public class Employee : Person
+    {
+        public string EmployeeID { get; set; }
+        public string Company { get; set; }
     }
 }

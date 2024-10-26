@@ -15,8 +15,8 @@ namespace MvcMovie.Migrations
                 columns: table => new
                 {
                     PersonID = table.Column<string>(type: "TEXT", nullable: false),
-                    FullName = table.Column<string>(type: "TEXT", nullable: false),
-                    Address = table.Column<string>(type: "TEXT", nullable: false)
+                    Hoten = table.Column<string>(type: "TEXT", nullable: false),
+                    QueQuan = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

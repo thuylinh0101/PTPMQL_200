@@ -10,7 +10,7 @@ using MvcMovie.Data;
 namespace MvcMovie.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240917083128_Create_Table_Student")]
+    [Migration("20241005074434_Create_Table_Student")]
     partial class Create_Table_Student
     {
         /// <inheritdoc />

@@ -10,8 +10,8 @@ using MvcMovie.Data;
 namespace MvcMovie.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241003151358_Change_Dataase")]
-    partial class Change_Dataase
+    [Migration("20241005074701_Create_Table_Person")]
+    partial class Create_Table_Person
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -19,55 +19,16 @@ namespace MvcMovie.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
 
-            modelBuilder.Entity("MvcMovie.Models.Entities.Customer", b =>
-                {
-                    b.Property<string>("CustomerID")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Address")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("CustomerID");
-
-                    b.ToTable("Customer");
-                });
-
-            modelBuilder.Entity("MvcMovie.Models.Entities.Employee", b =>
-                {
-                    b.Property<string>("EmployeeID")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("EmployeeID");
-
-                    b.ToTable("Employee");
-                });
-
             modelBuilder.Entity("MvcMovie.Models.Person", b =>
                 {
                     b.Property<string>("PersonID")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Address")
+                    b.Property<string>("Hoten")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("FullName")
+                    b.Property<string>("QueQuan")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
